@@ -29,11 +29,6 @@ ul {
   margin-bottom: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -98,6 +93,10 @@ body {
   font-size: 18px;
 }
 
+.place-title + p {
+  padding-left: 10px;
+}
+
 .left {
   min-width: 600px;
   padding-right: 20px;
@@ -113,21 +112,72 @@ body {
 }
 
 .main-frame {
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 450px;
 
   position: absolute;
-  top: 120px;
+  top: 70px;
   left: 50%;
 
-  border: 8px solid var(--text-color);
-  border-top-right-radius: 35%;
-  border-bottom-left-radius: 35%;
-  transform: translate(-50%) rotate(45deg);
-  z-index: 2;
+  transform: translate(-50%);
 }
 
 .photo {
-  transform: rotate(-45deg);
-  position: absolute;
+  border: 8px solid var(--text-color);
+  border-radius: 25%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 300ms;
+
+  display: flex;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.chapter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-chapter {
+  width: 45px;
+  min-height: 45px;
+  background-color: var(--accent-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--text-color);
+  border-radius: 25%;
+}
+
+.icon {
+  fill: var(--text-color);
+}
+
+.icon-contact {
+  width: 23px;
+  min-height: 23px;
+  background-color: var(--accent-color);
+
+  border: 1px solid var(--text-color);
+  border-radius: 45%;
+
+  margin-right: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-list > li + li {
+  margin-top: 5px;
 }
