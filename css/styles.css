@@ -1,0 +1,133 @@
+:root {
+  --accent-color: #2f98d5;
+  --primary-bg-color: #ffffff;
+  --secondaty-bg-color: #305674;
+  --text-color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-style {
+  list-style-type: "-";
+
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.main-container {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  margin-right: auto;
+  margin-left: auto;
+  width: 1440px;
+
+  display: flex;
+}
+
+.container {
+  background-color: var(--secondaty-bg-color);
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-weight: 500;
+
+  padding-left: 20px;
+}
+
+.name {
+  font-size: 45px;
+
+  margin-bottom: 35px;
+}
+
+.chapter-title {
+  font-size: 30px;
+}
+
+.work-title,
+.edu-title {
+  font-size: 25px;
+}
+
+.place-title {
+  font-size: 18px;
+}
+
+.left {
+  min-width: 600px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  position: relative;
+}
+
+.right {
+  min-width: 840px;
+}
+
+.main-frame {
+  width: 250px;
+  height: 250px;
+
+  position: absolute;
+  top: 120px;
+  left: 50%;
+
+  border: 8px solid var(--text-color);
+  border-top-right-radius: 35%;
+  border-bottom-left-radius: 35%;
+  transform: translate(-50%) rotate(45deg);
+  z-index: 2;
+}
+
+.photo {
+  transform: rotate(-45deg);
+  position: absolute;
+}
